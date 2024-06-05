@@ -206,8 +206,7 @@ class TextProcessingPipeline(object):
 
     def train_and_evaluate_models(self, use_jieba=True):
         X_train, X_test, y_train, y_test = train_test_split(self.data, self.label, test_size=0.2)
-        # model_names = ['Decision Tree', 'KNN', 'Naive Bayes', 'SVM', 'LogisticRegression', 'RandomForestClassifier']
-        model_names = ['Decision Tree']
+        model_names = ['Decision Tree', 'KNN', 'Naive Bayes', 'SVM', 'LogisticRegression', 'RandomForestClassifier']
         accuracies = []
 
         for model_name in model_names:
