@@ -151,7 +151,7 @@ class MLModel(object):
         elif model_name == 'SVM':
             self.clf = SVC()
         elif model_name == 'LogisticRegression':
-            self.clf = LogisticRegression()
+            self.clf = LogisticRegression(max_iter=10000)
         elif model_name == 'RandomForestClassifier':
             self.clf = RandomForestClassifier()
 
